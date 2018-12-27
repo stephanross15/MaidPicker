@@ -1,0 +1,52 @@
+Req7195: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String66a","password":"Strinaffaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res7195: {"message":"SignUp sucessfully","data":{"otp":"428922","userId":"5c17ba1c97b3541c4833b78e"}}
+Req10432: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String66a","password":"Strinaffaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res10432: {"message":"Email Already registered.","data":{}}
+Req5585: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res5585: {"message":"SignUp sucessfully","data":{"otp":"363609","userId":"5c17baa197b3541c4833b78f"}}
+Req1142: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res1142: {"message":"Email Already registered.","data":{}}
+Req861: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand402@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res861: {"message":"PhoneNumber Already registered.","data":{}}
+Req3022: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res3022: {"message":"ErrCode:20404, ErrMsg:The requested resource /2010-04-01/Accounts/ACe314b11f94d9e3fd64391242fef029/Messages.json was not found","data":{}}
+Res3022: {"message":"ErrCode:20404, ErrMsg:The requested resource /2010-04-01/Accounts/ACe314b11f94d9e3fd64391242fef029/Messages.json was not found","data":{}}
+Req8053: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res8053: {"message":"ErrCode:20003, ErrMsg:Authenticate","data":{}}
+Res8053: {"message":"ErrCode:20003, ErrMsg:Authenticate","data":{}}
+Req977: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res977: {"message":"Email Already registered.","data":{}}
+Req12996: http://localhost:8020/maidPicker/signUp
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Req12989: http://localhost:8020/maidPicker/verifyAccount
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Req14088: http://localhost:8020/maidPicker/verifyAccount
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Req1540: http://localhost:8020/maidPicker/verifyAccount
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Req2370: http://localhost:8020/maidPicker/verifyAccount
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Req15398: http://localhost:8020/maidPicker/signUp
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Req2040: http://localhost:8020/maidPicker/signUp
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Req6381: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Res6381: {"message":"Something went wrong.","data":{}}
+Req914: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bf2eb579571cb8f40036","isVerify":true}
+Res914: {"message":"Something went wrong.","data":{}}
+Req920: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bfa8414aca18c8582657","isVerify":true}
+Res920: {"message":"SignUp sucessfully","data":{"success":true}}
+Req14282: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bfa8414aca18c8582657","isVerify":true}
+Res14282: {"message":"Verification sucessfully","data":{"success":true}}

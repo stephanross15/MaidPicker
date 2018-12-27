@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "outDir": "bin",
+    //"rootDirs": ["src","config"],
+    "rootDir": "src",
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "lib": ["es2017", "dom"]
+   
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+  
+}

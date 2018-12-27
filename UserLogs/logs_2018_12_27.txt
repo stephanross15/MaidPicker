@@ -1,0 +1,15 @@
+Req12531: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Narinder","lastName":"Dev","emailId":"narinder.dev@gmail.com","password":"123","phoneNumber":"+919780909312","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res12531: {"message":"SignUp sucessfully.","data":{"otp":"7052","userId":"5c24ee392e5fce09e00e1921"}}
+Req10669: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"vaishali","lastName":"Dev","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res10669: {"message":"Email Already registered.","data":{}}
+Req10241: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"vaishali","lastName":"Dev","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res10241: {"message":"SignUp sucessfully.","data":{"otp":"2880","userId":"5c24ee852e5fce09e00e1922"}}
+Req6948: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"vaishali","lastName":"Dev","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res6948: {"message":"Email Already registered.","data":{}}
+Req11636: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"vaishali","lastName":"Dev","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res11636: {"message":"SignUp sucessfully.","data":{"otp":"8553","userId":"5c2506c421e07f0300b534f4"}}

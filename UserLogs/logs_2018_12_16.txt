@@ -1,0 +1,37 @@
+Req8230: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String","password":"String","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Req15201: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String","password":"String","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Req15098: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String","password":"String","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res15098: {"message":"SignUp sucessfully","data":{"otp":"643582","userId":{"userName":"String","emailId":"string","password":"String","phoneNumber":"String","zipCode":"String","isAccountVerified":false,"isFacebookSignup":false,"isFacebookUrl":false,"_id":"5c1689b9ef9fc8234c5b19bc","createdOn":"2018-12-16T17:22:01.489Z","modifiedOn":"2018-12-16T17:22:01.489Z","id":"5c1689b9ef9fc8234c5b19bc"}}}
+Req13973: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String","password":"String","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res13973: {"message":"Email Already registered.","data":{}}
+Req12909: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"Stringa","password":"String","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res12909: {"message":"PhoneNumber Already registered.","data":{}}
+Req958: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"Stringa","password":"Stringa","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res958: {"message":"PhoneNumber Already registered.","data":{}}
+Req14391: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"Stringa","password":"Stringa","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res14391: {"message":"PhoneNumber Already registered.","data":{}}
+Req8148: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"Stringa","password":"Strinaaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res8148: {"message":"PhoneNumber Already registered.","data":{}}
+Req14056: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"Stringa","password":"Strinaaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res14056: {"message":"PhoneNumber Already registered.","data":{}}
+Req13060: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"Stringa","password":"Strinaaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res13060: {"message":"SignUp sucessfully","data":{"otp":"895336","userId":"5c168a90dcd8d510f82b7c1d"}}
+Req1129: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"Stringa","password":"Strinaaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res1129: {"message":"Email Already registered.","data":{}}
+Req2466: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String66a","password":"Strinaaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res2466: {"message":"PhoneNumber Already registered.","data":{}}
+Req4430: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"String","emailId":"String66a","password":"Strinaffaga","phoneNumber":"String","zipCode":"String","deviceId":"String","uniqueId":"String","deviceType":"String","deviceVersion":"String"}
+Res4430: {"message":"PhoneNumber Already registered.","data":{}}

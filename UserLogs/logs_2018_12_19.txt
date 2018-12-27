@@ -1,0 +1,7 @@
+Req13295: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"EAAHXbXltaAABADK0ZB94nID39tdc3brkvpaKjzLjsZBoWVyMJBHe6wbPRjophUcJN3kARw2YjzT4VDbRbWeOzH9i6ZAiGSgPKCryxM7WMoh0LWPZBAViWknujyS8ruwJw5JiJLsseyZBdFjCtDrSgFe7uQO8d17bqo0H9KJN4CB4A1iRWlcfwWFHCyKj9xPcck1vwji04Nbc33AAz2RbfXDVo0kbYRB8ZD","emailId":"vaishalivnand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":true}
+Res13295: {"message":"Login sucessfully.","data":{"accessToken":"mEGh5xrf4BLSzFZO4yyYyb2M7HaxVkPenLOd"}}
+Req5469: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"EAAHXbXltaAABADK0ZB94nID39tdc3brkvpaKjzLjsZBoWVyMJBHe6wbPRjophUcJN3kARw2YjzT4VDbRbWeOzH9i6ZAiGSgPKCryxM7WMoh0LWPZBAViWknujyS8ruwJw5JiJLsseyZBdFjCtDrSgFe7uQO8d17bqo0H9KJN4CB4A1iRWlcfwWFHCyKj9xPcck1vwji04Nbc33AAz2RbfXDVo0kbYRB8ZD","emailId":"vaishalivnand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":true}
+Req14109: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"EAAHXbXltaAABAMXHT7utcQQ1JFoW0V0SZC8ZChg5t49w7rpKeTUKx8yP7HR6eVonVScZA06aQWevS2ZBtGnwhbBSiGI1EwGOgn7S85hR3uXTOpC1x5XFZA9yBzpwl5OTMkxhlZBDjmPAUeA1WVZAgKMyQ81liLyjyIpbBpgNtramibwTFRJHyYSCFJ9Y5rIsVZBHaAfUzzaZAcyZCswd2yEcuXNVpDiphCZCZAsZD","emailId":"vaishalivnand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":true}

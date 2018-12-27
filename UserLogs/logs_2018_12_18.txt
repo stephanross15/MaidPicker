@@ -1,0 +1,94 @@
+Req3590: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res3590: {"message":"ErrCode:20404, ErrMsg:The requested resource /2010-04-01/Accounts/ACe314b11f94d9e3fd64391242fef029/Messages.json was not found","data":{}}
+Res3590: {"message":"ErrCode:20404, ErrMsg:The requested resource /2010-04-01/Accounts/ACe314b11f94d9e3fd64391242fef029/Messages.json was not found","data":{}}
+Req6540: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res6540: {"message":"Email Already registered.","data":{}}
+Req8625: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res8625: {"message":"Something went wrong.","data":{}}
+Req14223: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res14223: {"message":"SignUp sucessfully.","data":{"otp":"272092","userId":"5c1926c35549481e9c153eeb"}}
+Req1227: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res1227: {"message":"SignUp sucessfully.","data":{"otp":"702403","userId":"5c192709ce811b10fcf57970"}}
+Req5886: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res5886: {"message":"SignUp sucessfully.","data":{"otp":"837860","userId":"5c19275b80690418ec799ddf"}}
+Req2539: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res2539: {"message":"SignUp sucessfully.","data":{"otp":"351529","userId":"5c19279d87c21806fc116c42"}}
+Req8581: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res8581: {"message":"SignUp sucessfully.","data":{"otp":"139457","userId":"5c1927e85edaa713802080e8"}}
+Req13405: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res13405: {"message":"SignUp sucessfully.","data":{"otp":"561085","userId":"5c192898f8a2151c0c98ec48"}}
+Req11769: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res11769: {"message":"SignUp sucessfully.","data":{"otp":"776494","userId":"5c1929017fdc5f115c68902f"}}
+Req1932: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res1932: {"message":"SignUp sucessfully.","data":{"otp":"186642","userId":"5c1929da2227211dd842b7f6"}}
+Req547: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res547: {"message":"SignUp sucessfully.","data":{"otp":"197856","userId":"5c192a25f2d86819c0b7980b"}}
+Req8005: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res8005: {"message":"SignUp sucessfully.","data":{"otp":"599659","userId":"5c192b816668601bdc5b07fe"}}
+Req14380: http://localhost:8020/maidPicker/forgotPassword
+ Body: {"emailId":"vaishalianand4020@gmail.com"}
+Res14380: {"message":"Email sent sucessfully.","data":{}}
+Req12585: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res12585: {"message":"Email Already registered.","data":{}}
+Req10614: http://localhost:8020/maidPicker/signUp
+ Body: {"userName":"Vaishali","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","zipCode":"250002","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res10614: {"message":"SignUp sucessfully.","data":{"otp":"876229","userId":"5c192f83f47ddb1de4d7a6a0"}}
+Req2469: http://localhost:8020/maidPicker/forgotPassword
+ Body: {"emailId":"vaishalianand4020@gmail.com"}
+Res2469: {"message":"Email sent sucessfully.","data":{}}
+Req13765: http://localhost:8020/maidPicker/forgotPassword
+ Body: {"emailId":"vaishalivnand4020@gmail.com"}
+Res13765: {"message":"No User Found.","data":{}}
+Req9189: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bfa8414aca18c8582657","isVerify":true}
+Res9189: {"message":"Something went wrong.","data":{}}
+Req684: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bfa8414aca18c8582657","isVerify":true}
+Res684: {"message":"Something went wrong.","data":{}}
+Req12709: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bfa8414aca18c8582657","isVerify":true}
+Res12709: {"message":"Something went wrong.","data":{}}
+Req3695: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c17bfa8414aca18c8582657","isVerify":true}
+Res3695: {"message":"You are unauthorized to verify Account","data":{}}
+Req1804: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c192f83f47ddb1de4d7a6a0","isVerify":true}
+Res1804: {"message":"Verification sucessfully.","data":{"success":true}}
+Req12113: http://localhost:8020/maidPicker/logout
+ Body: {"accessToken":"String"}
+Res12113: {"message":"Invalid Access Token.","data":{}}
+Req14759: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"String","emailId":"vaishalianand4020@gmail.com","password":"1234","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res14759: {"message":"Incorrect Password.","data":{}}
+Req7532: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"String","emailId":"vaishalianand4020@gmail.com","password":"1234","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res7532: {"message":"Your Password is Incorrect , Please provide valid password.","data":{}}
+Req14661: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"String","emailId":"vaishalianand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res14661: {"message":"Login sucessfully.","data":{"accessToken":"0yen84irD1tRYaDf2c18OMYcfGpQzWATWlTr"}}
+Req13464: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"String","emailId":"vaishalianand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res13464: {"message":"Phone number Not verfied.","data":{}}
+Req2402: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"String","emailId":"vaishalivnand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res2402: {"message":"No User Found.","data":{}}
+Req3669: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"String","emailId":"vaishalivnand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res3669: {"message":"No User Found.","data":{}}
+Req15184: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"String","emailId":"vaishalivnand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":true}
+Res15184: {"message":"ErrCode:undefined, ErrMsg:400 - \"{\\\"error\\\":{\\\"message\\\":\\\"Invalid OAuth access token.\\\",\\\"type\\\":\\\"OAuthException\\\",\\\"code\\\":190,\\\"fbtrace_id\\\":\\\"DgGz6tLbxTs\\\"}}\"","data":{}}

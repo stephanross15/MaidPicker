@@ -1,0 +1,52 @@
+{
+  "name": "maidpicker",
+  "version": "1.0.0",
+  "description": "MaidPicker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/main.js",
+    "test": "echo \"Error: no test specified here\" && exit 1",
+    "install-dev-service": "winser -i -s -a -n MaidPickerAPIQA",
+    "uninstall-dev-service": "winser -r -x -s -n MaidPickerAPIQA",
+    "install-stag-service": "winser -i -s -a -n MaidPickerAPIStag",
+    "uninstall-stag-service": "winser -r -x -s -n MaidPickerAPIStag",
+    "install-service": "winser -i -s -a -n MaidPickerAPIProd",
+    "uninstall-service": "winser -r -x -s -n MaidPickerAPIProd"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bluebird": "^3.5.23",
+    "@types/body-parser": "^1.17.0",
+    "@types/core-js": "^2.5.0",
+    "@types/ejs": "^2.6.0",
+    "@types/email-templates": "^3.5.0",
+    "@types/express": "^4.16.0",
+    "@types/fb": "0.0.23",
+    "@types/gm": "^1.18.0",
+    "@types/mongoose": "^5.2.6",
+    "@types/node": "^10.9.1",
+    "@types/twilio": "0.0.10",
+    "aes-js": "^3.1.1",
+    "cool-ascii-faces": "^1.3.4",
+    "cors": "^2.8.4",
+    "crypto-js": "^3.1.9-1",
+    "ejs": "^2.6.1",
+    "email-templates": "^4.0.4",
+    "express": "^4.16.3",
+    "fb": "^2.0.0",
+    "fcm-push": "^1.1.3",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.2.8",
+    "nodemailer": "^4.6.8",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "twilio": "^3.25.0",
+    "typescript": "^3.2.2",
+    "winser": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

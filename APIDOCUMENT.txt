@@ -1,0 +1,164 @@
+SignUp
+Steps:
+1.check if the given emailId exixts in the system
+2.If yes then Prompt email already registerd else procced to step 3.
+3.check if the specified phone Number exist 
+4.If yes then prompt phone number already registerd ,else proceed to step 5.
+5.save the given data into the user table.
+6.Send the 6 digit otp to both given email and phone Number. 
+7.Send the response object to mobile end.
+
+
+http://localhost:8020/maidPicker/signUp
+Request Parameters:
+{
+	"userName":"Vaishali", 
+    "emailId":"vaishalianand4020@gmail.com", 
+    "password":"123",
+   "phoneNumber":"+919761040874" , 
+    "zipCode":"250002", 
+    "deviceId":"12345", 
+    "uniqueId":"ABC", 
+    "deviceType":"Android", 
+    "deviceVersion":"v.1"
+}
+Response : 
+In case of Error
+{
+    "message": "Email Already registered.",
+    "data": {}
+}
+In case of Response
+{
+    "message": "SignUp sucessfully.",
+    "data": {
+        "otp": "876229",
+        "userId": "5c192f83f47ddb1de4d7a6a0"
+    }
+}
+
+Login
+steps:
+1.Check if the email exist in the system 
+2.If Not then user tries to login without signup , then prompt No User with this Id Exist , else Proceed step 3.
+3.check if the Password provided matches with the password saved in database while signup.
+4.If No then prompt Your Password is Incorrect , Please provide valid password else proceed step 5.
+5.check if Account verification completed .
+6.If no prompt Phone number Not verfied , else proceed step 7.
+7. allow user to login , generate accesstoken  save login details in Db.
+8.Send response to mobile End.
+
+{
+	"fbAccessToken":"hfghchdsghxdzcjsghjsdgjfdbhvncxbm,khuxjdcgxfgx",   //Not implemented yet as part of Social media login
+    "emailId":"vaishalivnand4020@gmail.com", //Mandatory
+    "password":"123", //(Mandatory)
+    "deviceId":"ghdghgdsbcvbxccnxbnmgd", // For sending notifications contains Fcm Id. (Mandatory)
+    "uniqueId":"uniqueId", // Not necessary (Optional)
+    "deviceType":"Android", //(Mandatory)
+    "deviceVersion":"v.1", // (Release version) 
+    "isFaceBookSignup":false // boolean value to distinguish between app login or facebook login (Mandatory)
+}
+
+Error 1: When user tries to login wihtout signup.
+{
+    "message": "No User with this Id Exist.",
+    "data": {}
+}
+Error 2: When Provided email matches but password does not matches with the password saved in database while signup.
+{
+    "message": "Your Password is Incorrect , Please provide valid password.",
+    "data": {}
+}
+Error 3: When user tries to login without verifiaction.
+{
+    "message": "Phone number Not verfied.",
+    "data": {}
+}
+In case of Response
+{
+    "message": "Login sucessfully.",
+    "data": {
+        "accessToken": "0yen84irD1tRYaDf2c18OMYcfGpQzWATWlTr"
+    }
+}
+logout
+http://localhost:8020/maidPicker/logout
+
+Request Parameters:
+{
+	"accessToken": "0yen84irD1tRYaDf2c18OMYcfGpQzWATWlTr"
+}
+Response : 
+In case of error
+{
+    "message": "Invalid Access Token.",
+    "data": {}
+}
+In case of Response
+{
+    "message": "Email sent sucessfully.",
+    "data": {}
+}
+
+
+ForgotPassword
+Steps :
+1.check if the specified emailId exists in the system.
+2.If no then prompt user not found else proceed step 3.
+3.generate six digit otp and sent the email to the specified email id.
+
+
+http://localhost:8020/maidPicker/forgotPassword
+Request Parameters:
+{
+	"emailId" : "vaishalianand4020@gmail.com"
+}
+Response : 
+In case of error
+{
+    "message": "No User Found.",
+    "data": {}
+}
+In case of Response
+{
+    "message": "Email sent sucessfully.",
+    "data": {}
+}
+
+VerifyAccount
+Steps :
+1.check if the specified userId exists in the system.(Which sent in the response of signup api )
+2.If no then prompt You are unauthorized to verify Account else proceed step 3.
+3.send response as given below.
+
+
+http://localhost:8020/maidPicker/verify
+Request Parameters:
+
+{
+	"userId" :"5c17bfa8414aca18c8582657",
+	"isVerify":true
+}
+In case of error
+{
+    "message": "You are unauthorized to verify Account",
+    "data": {}
+}
+
+In case of Response
+{
+    "message": "Verification sucessfully.",
+    "data": {
+        "success": true
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////GRAPH API STEPS //////////////////////////////////////////////////////////////////////////////////////////////////////
+For fetching data from facebook grap Api 
+First craete Gmail Account.
+Create Fb Account from that gmail account.
+Then  open Developers.faceebook means facebook graph Api explorer (https://developers.facebook.com/tools/explorer/), link your Fb account with that Graph Api Explorer, Select generate user accessToken(to generate Fb accessToken)then select email , userPhotos check boxes.
+Put that token in Api request parameters fetch response from fb .
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

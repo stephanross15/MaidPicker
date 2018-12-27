@@ -1,0 +1,23 @@
+Req15394: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Vaishali","lastName":"Anand","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res15394: {"message":"ErrCode:21211, ErrMsg:The 'To' number  is not a valid phone number.","data":{}}
+Res15394: {"message":"ErrCode:21211, ErrMsg:The 'To' number  is not a valid phone number.","data":{}}
+Req12859: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Vaishali","lastName":"Anand","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res12859: {"message":"ErrCode:21211, ErrMsg:The 'To' number  is not a valid phone number.","data":{}}
+Res12859: {"message":"ErrCode:21211, ErrMsg:The 'To' number  is not a valid phone number.","data":{}}
+Req15050: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Vaishali","lastName":"Anand","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res15050: {"message":"SignUp sucessfully.","data":{"otp":"889700","userId":"5c23bf5d3527b80bcc383dda"}}
+Req13317: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Vaishali","lastName":"Anand","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res13317: {"message":"SignUp sucessfully.","data":{"otp":"817281","userId":"5c23bfc43527b80bcc383ddb"}}
+Req13092: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Vaishali","lastName":"Anand","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res13092: {"message":"ErrCode:undefined, ErrMsg:Cannot read property 'messages' of undefined","data":{}}
+Req14044: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Vaishali","lastName":"Anand","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919761040874","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res14044: {"message":"SignUp sucessfully.","data":{"otp":"3395","userId":"5c23c2d8cf9ed71df894016c"}}
+Req5744: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Vaishali","lastName":"Anand","emailId":"vaishalianand4020@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res5744: {"message":"SignUp sucessfully.","data":{"otp":"7592","userId":"5c23c34d9f8adf16d84b07ec"}}
