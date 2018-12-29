@@ -47,9 +47,10 @@ export class ApiNames {
 export class EmailConstants {
     public static readonly SENDER_SERVICE = "gmail";
     public static readonly SENDER_PORT = 465;
-
-    public static readonly SENDER_EMAIL_ID = "stephanross15@gmail.com";
-    public static readonly SENDER_EMAIL_PASSWORD = "missanand123";
+    public static readonly SENDER_EMAIL_ID = "pickermaid@gmail.com";
+    public static readonly SENDER_EMAIL_PASSWORD = "Admin@123";
+    // public static readonly SENDER_EMAIL_ID = "stephanross15@gmail.com";
+    // public static readonly SENDER_EMAIL_PASSWORD = "missanand123";
     // public static readonly SENDER_SERVICE = "tutorSpace";
     // public static readonly SENDER_PORT = 465;
     // public static readonly SENDER_SMTP = "mail.tutorspace.de";
@@ -86,6 +87,8 @@ export class ResponseMessages {
       public static readonly SIGNUP_EMAIL_ALREADY_REGISTERED= ResponseMessages.error(ErrorCodes.UNAUTHORIZED, "Email Already registered.");
       public static readonly SIGNUP_PHONE_NUMBER_ALREADY_REGISTERED = ResponseMessages.error(ErrorCodes.UNAUTHORIZED, "PhoneNumber Already registered.");
       public static readonly FACEBOOK_LOGIN_ERROR = ResponseMessages.error(ErrorCodes.PAGE_NOT_FOUND, "No User Found.");
+      public static readonly USER_ALREADY_VERIFIED = ResponseMessages.error(ErrorCodes.PAGE_NOT_FOUND, "User alraedy Verified.");
+      
 
       
   

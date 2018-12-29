@@ -33,6 +33,7 @@ var Main = /** @class */ (function () {
 var isQARelease = false;
 var isStagingRelease = false;
 var isProdRelease = false;
+//const serverPort =  process.env.PORT || 3000; ;
 var serverPort = isQARelease ? Contants_1.ProjectConstants.QAPORT : isStagingRelease ? Contants_1.ProjectConstants.STAGINGPORT : isProdRelease ? Contants_1.ProjectConstants.PRODPORT : Contants_1.ProjectConstants.LOCALPORT;
 var databaseName = isQARelease ? Contants_1.ProjectConstants.QADATABASENAME : isStagingRelease ? Contants_1.ProjectConstants.STAGINGDATABASENAME : isProdRelease ? Contants_1.ProjectConstants.PRODDATABASENAME : Contants_1.ProjectConstants.LOCALDATABASENAME;
 var databasePort = isQARelease ? Contants_1.ProjectConstants.QADATABASEPORT : isStagingRelease ? Contants_1.ProjectConstants.STAGINGDATABASEPORT : isProdRelease ? Contants_1.ProjectConstants.PRODDATABASEPORT : Contants_1.ProjectConstants.LOCALDATABASEPORT;

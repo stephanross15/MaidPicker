@@ -30,8 +30,9 @@ var SignUp = /** @class */ (function () {
             if (user) {
                 throw Contants_1.ResponseMessages.SIGNUP_PHONE_NUMBER_ALREADY_REGISTERED;
             }
-            response.otp = UtilityMethods_1.UtilityMethods.generateOtp();
-            return UserCore_1.userDao.saveUserDetail(json.phoneNumber, json.emailId, json.password, json.firstName, json.lastName, response.otp);
+            var otp = UtilityMethods_1.UtilityMethods.generateOtp();
+            response.otp = otp;
+            return UserCore_1.userDao.saveUserDetail(json.phoneNumber, json.emailId, json.password, json.firstName, json.lastName, otp);
         })
             .then(function (userDetailObj) {
             if (!userDetailObj) {
@@ -45,7 +46,7 @@ var SignUp = /** @class */ (function () {
             if (!msg) {
             }
             var emailTemplate = "templates/AccountRegistration.ejs";
-            ejs.renderFile(emailTemplate, { userName: userDetailObject.firstName + userDetailObject.lastName, otp: response.otp }, function (error, data) {
+            ejs.renderFile(emailTemplate, { userName: userDetailObject.firstName + "" + userDetailObject.lastName, otp: response.otp }, function (error, data) {
                 if (error) {
                     throw Contants_1.ResponseMessages.SOMETHING_WENT_WRONG;
                     //  res.send()
@@ -65,8 +66,15 @@ var SignUp = /** @class */ (function () {
             if (!userDetail || util_1.isNullOrUndefined(userDetail)) {
                 throw Contants_1.ResponseMessages.YOU_ARE_UNAUTHORIZED_TO_VERIFY;
             }
-            if (userDetail.accountVerificationOTP != Number(json.otp))
+            if (userDetail.isAccountVerified == true) {
+                throw Contants_1.ResponseMessages.USER_ALREADY_VERIFIED;
+            }
+            if (userDetail.accountVerificationOTP != Number(json.otp) || userDetail.accountVerificationOTP == null) {
+                throw Contants_1.ResponseMessages.YOU_ARE_UNAUTHORIZED_TO_VERIFY;
+            }
+            else {
                 return UserCore_1.userDao.updatePhoneVerificationByUserId(json.userId);
+            }
         })
             .then(function (userDetailObj) {
             if (!userDetailObj || util_1.isNullOrUndefined(userDetailObj)) {

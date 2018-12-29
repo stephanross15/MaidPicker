@@ -31,8 +31,10 @@ export default class SignUp {
                 if (user) {
                     throw ResponseMessages.SIGNUP_PHONE_NUMBER_ALREADY_REGISTERED;
                 }
-                response.otp = UtilityMethods.generateOtp();
-                return userDao.saveUserDetail(json.phoneNumber, json.emailId, json.password, json.firstName,json.lastName, response.otp);
+             let otp = UtilityMethods.generateOtp();
+             response.otp = otp;
+                return userDao.saveUserDetail(json.phoneNumber, 
+                    json.emailId, json.password, json.firstName,json.lastName, otp);
             })
             .then(userDetailObj => {
                 if (!userDetailObj) { throw ResponseMessages.SOMETHING_WENT_WRONG; }
@@ -45,7 +47,7 @@ export default class SignUp {
                     
                 }
                 let emailTemplate = "templates/AccountRegistration.ejs";
-                ejs.renderFile(emailTemplate, { userName: userDetailObject.firstName+ userDetailObject.lastName, otp: response.otp },
+                ejs.renderFile(emailTemplate, { userName: userDetailObject.firstName+""+userDetailObject.lastName, otp: response.otp },
                     function (error, data) {
                         if (error) {
                             throw ResponseMessages.SOMETHING_WENT_WRONG;
@@ -67,8 +69,20 @@ export default class SignUp {
                 if (!userDetail || isNullOrUndefined(userDetail)) {
                     throw ResponseMessages.YOU_ARE_UNAUTHORIZED_TO_VERIFY;
                 }
-                if(userDetail.accountVerificationOTP != Number(json.otp))
-                return userDao.updatePhoneVerificationByUserId(json.userId)
+                if(userDetail.isAccountVerified == true )
+                {
+                    throw ResponseMessages.USER_ALREADY_VERIFIED;
+                }
+                if(userDetail.accountVerificationOTP != Number(json.otp) ||userDetail.accountVerificationOTP ==null)
+                {
+                    
+                        throw ResponseMessages.YOU_ARE_UNAUTHORIZED_TO_VERIFY;
+                    
+                }
+                else{
+                    return userDao.updatePhoneVerificationByUserId(json.userId)
+                }
+            
             })
             .then(
                 userDetailObj => {

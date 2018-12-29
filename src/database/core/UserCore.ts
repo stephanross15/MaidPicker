@@ -44,7 +44,7 @@ class UserDao {
  userObj.password =   password.toString();
  userObj.firstName =  firstName;
  userObj.lastName =lastName;
- userObj.otp= otp;
+ userObj.accountVerificationOTP= otp;
  userObj.isAccountVerified = false;
  userObj.isFacebookSignup = false;
  userObj.isFacebookUrl = false;

@@ -38,7 +38,7 @@ class Main {
 const isQARelease = false;
 const isStagingRelease = false;
 const isProdRelease = false;
-
+//const serverPort =  process.env.PORT || 3000; ;
 const serverPort =   isQARelease ? ProjectConstants.QAPORT : isStagingRelease ? ProjectConstants.STAGINGPORT : isProdRelease ? ProjectConstants.PRODPORT : ProjectConstants.LOCALPORT;
 const databaseName = isQARelease ? ProjectConstants.QADATABASENAME : isStagingRelease ? ProjectConstants.STAGINGDATABASENAME : isProdRelease ? ProjectConstants.PRODDATABASENAME : ProjectConstants.LOCALDATABASENAME;
 const databasePort = isQARelease ? ProjectConstants.QADATABASEPORT : isStagingRelease ? ProjectConstants.STAGINGDATABASEPORT : isProdRelease ? ProjectConstants.PRODDATABASEPORT : ProjectConstants.LOCALDATABASEPORT;

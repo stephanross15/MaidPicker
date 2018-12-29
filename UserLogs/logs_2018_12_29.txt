@@ -1,0 +1,51 @@
+Req6719: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Dtephan","lastName":"Dev","emailId":"stephanross15@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res6719: {"message":"PhoneNumber Already registered.","data":{}}
+Req13629: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Dr stephan","lastName":"Dev","emailId":"stephanross15@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res13629: {"message":"SignUp sucessfully.","data":{"otp":"5033","userId":"5c26f809fac1a32218ebec6d"}}
+Req7625: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"EAAHXbXltaAABAMXHT7utcQQ1JFoW0V0SZC8ZChg5t49w7rpKeTUKx8yP7HR6eVonVScZA06aQWevS2ZBtGnwhbBSiGI1EwGOgn7S85hR3uXTOpC1x5XFZA9yBzpwl5OTMkxhlZBDjmPAUeA1WVZAgKMyQ81liLyjyIpbBpgNtramibwTFRJHyYSCFJ9Y5rIsVZBHaAfUzzaZAcyZCswd2yEcuXNVpDiphCZCZAsZD","emailId":"vaishalivnand4020@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res7625: {"message":"No User with this Id Exist.","data":{}}
+Req5866: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"EAAHXbXltaAABAMXHT7utcQQ1JFoW0V0SZC8ZChg5t49w7rpKeTUKx8yP7HR6eVonVScZA06aQWevS2ZBtGnwhbBSiGI1EwGOgn7S85hR3uXTOpC1x5XFZA9yBzpwl5OTMkxhlZBDjmPAUeA1WVZAgKMyQ81liLyjyIpbBpgNtramibwTFRJHyYSCFJ9Y5rIsVZBHaAfUzzaZAcyZCswd2yEcuXNVpDiphCZCZAsZD","emailId":"stephanross15@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res5866: {"message":"Phone number Not verfied.","data":{}}
+Req1900: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Dr stephan","lastName":"Dev","emailId":"stephanross15@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res1900: {"message":"SignUp sucessfully.","data":{"otp":"1167","userId":"5c26fd466e7be727807325d4"}}
+Req10479: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Dr stephan","lastName":"Dev","emailId":"stephanross15@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res10479: {"message":"SignUp sucessfully.","data":{"otp":"3006","userId":"5c26ff9126de55174c148e9b"}}
+Req1798: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Dr stephan","lastName":"Dev","emailId":"stephanross15@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res1798: {"message":"SignUp sucessfully.","data":{"otp":"8400","userId":"5c26ffc7abd2d1017874eb2a"}}
+Req10774: http://localhost:8020/maidPicker/signUp
+ Body: {"firstName":"Dr stephan","lastName":"Dev","emailId":"stephanross15@gmail.com","password":"123","phoneNumber":"+919872239311","deviceId":"12345","uniqueId":"ABC","deviceType":"Android","deviceVersion":"v.1"}
+Res10774: {"message":"SignUp sucessfully.","data":{"otp":"2093","userId":"5c2700217112a720e8de67ad"}}
+Req10560: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"EAAHXbXltaAABAMXHT7utcQQ1JFoW0V0SZC8ZChg5t49w7rpKeTUKx8yP7HR6eVonVScZA06aQWevS2ZBtGnwhbBSiGI1EwGOgn7S85hR3uXTOpC1x5XFZA9yBzpwl5OTMkxhlZBDjmPAUeA1WVZAgKMyQ81liLyjyIpbBpgNtramibwTFRJHyYSCFJ9Y5rIsVZBHaAfUzzaZAcyZCswd2yEcuXNVpDiphCZCZAsZD","emailId":"stephanross15@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res10560: {"message":"Phone number Not verfied.","data":{}}
+Req533: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c2700217112a720e8de67ad","otp":"2093"}
+Res533: {"message":"Verification sucessfully.","data":{"success":true}}
+Req1929: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c2700217112a720e8de67ad","otp":"2093"}
+Res1929: {"message":"User alraedy Verified.","data":{}}
+Req3663: http://localhost:8020/maidPicker/verify
+ Body: {"userId":"5c2700217112a720e8de67ad","otp":"2093"}
+Res3663: {"message":"User alraedy Verified.","data":{}}
+Req4732: http://localhost:8020/maidPicker/login
+ Body: {"fbAccessToken":"EAAHXbXltaAABAMXHT7utcQQ1JFoW0V0SZC8ZChg5t49w7rpKeTUKx8yP7HR6eVonVScZA06aQWevS2ZBtGnwhbBSiGI1EwGOgn7S85hR3uXTOpC1x5XFZA9yBzpwl5OTMkxhlZBDjmPAUeA1WVZAgKMyQ81liLyjyIpbBpgNtramibwTFRJHyYSCFJ9Y5rIsVZBHaAfUzzaZAcyZCswd2yEcuXNVpDiphCZCZAsZD","emailId":"stephanross15@gmail.com","password":"123","deviceId":"1234567","uniqueId":"uniqueId","deviceType":"Android","deviceVersion":"v.1","isFaceBookSignup":false}
+Res4732: {"message":"Login sucessfully.","data":{"accessToken":"RcQDhOL15G4p2xw1Q765Vl9wLtBkAtEg6zer"}}
+Req1150: http://localhost:8020/maidPicker/logout
+ Body: {"accessToken":"RcQDhOL15G4p2xw1Q765Vl9wLtBkAtEg6zer"}
+Res1150: {"message":"Refresh Token Expired.","data":{}}
+Req14306: http://localhost:8020/maidPicker/logout
+ Body: {"accessToken":"RcQDhOL15G4p2xw1Q765Vl9wLtBkAtEg6zer"}
+Res14306: {"message":"Logout sucessfully.","data":{}}
+Req3667: http://localhost:8020/maidPicker/forgotPassword
+ Body: {"emailId":"vaishalivnand4020@gmail.com"}
+Res3667: {"message":"No User with this Id Exist.","data":{}}
+Req7880: http://localhost:8020/maidPicker/forgotPassword
+ Body: {"emailId":"stephanross15@gmail.com"}
+Res7880: {"message":"Email sent sucessfully.","data":{}}

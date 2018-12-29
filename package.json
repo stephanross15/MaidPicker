@@ -2,7 +2,7 @@
   "name": "maidpicker",
   "version": "1.0.0",
   "description": "MaidPicker",
-  "main": "index.js",
+  "main": "node index.js",
   "scripts": {
     "start": "node ./bin/main.js",
     "test": "echo \"Error: no test specified here\" && exit 1",

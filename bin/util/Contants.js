@@ -52,8 +52,10 @@ var EmailConstants = /** @class */ (function () {
     }
     EmailConstants.SENDER_SERVICE = "gmail";
     EmailConstants.SENDER_PORT = 465;
-    EmailConstants.SENDER_EMAIL_ID = "stephanross15@gmail.com";
-    EmailConstants.SENDER_EMAIL_PASSWORD = "missanand123";
+    EmailConstants.SENDER_EMAIL_ID = "pickermaid@gmail.com";
+    EmailConstants.SENDER_EMAIL_PASSWORD = "Admin@123";
+    // public static readonly SENDER_EMAIL_ID = "stephanross15@gmail.com";
+    // public static readonly SENDER_EMAIL_PASSWORD = "missanand123";
     // public static readonly SENDER_SERVICE = "tutorSpace";
     // public static readonly SENDER_PORT = 465;
     // public static readonly SENDER_SMTP = "mail.tutorspace.de";
@@ -95,6 +97,7 @@ var ResponseMessages = /** @class */ (function () {
     ResponseMessages.SIGNUP_EMAIL_ALREADY_REGISTERED = ResponseMessages.error(ErrorCodes.UNAUTHORIZED, "Email Already registered.");
     ResponseMessages.SIGNUP_PHONE_NUMBER_ALREADY_REGISTERED = ResponseMessages.error(ErrorCodes.UNAUTHORIZED, "PhoneNumber Already registered.");
     ResponseMessages.FACEBOOK_LOGIN_ERROR = ResponseMessages.error(ErrorCodes.PAGE_NOT_FOUND, "No User Found.");
+    ResponseMessages.USER_ALREADY_VERIFIED = ResponseMessages.error(ErrorCodes.PAGE_NOT_FOUND, "User alraedy Verified.");
     //Misc Contants.
     ResponseMessages.NO_USER_FOUND = ResponseMessages.error(ErrorCodes.PAGE_NOT_FOUND, "No User with this Id Exist.");
     ResponseMessages.LOGIN_INCORRECT_PASSWORD = ResponseMessages.error(ErrorCodes.PAGE_NOT_FOUND, "Your Password is Incorrect , Please provide valid password.");

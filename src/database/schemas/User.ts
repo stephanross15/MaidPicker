@@ -14,7 +14,7 @@ export const userSchema = new Schema( {
   password: {type:mongoose.Schema.Types.String , default : null}, 
   phoneNumber: {type:mongoose.Schema.Types.String, default : null}, 
   isAccountVerified: {type:mongoose.Schema.Types.Boolean, default : false}, 
-  accountVerificationOTP : {type:mongoose.Schema.Types.Number} ,
+  accountVerificationOTP : {type:mongoose.Schema.Types.Number ,  default : null} ,
    isFacebookSignup:{type:mongoose.Schema.Types.Boolean  , default : false},
   createdOn: {type:Date, default:Date.now}, 
   modifiedOn: {type:Date, default:Date.now},

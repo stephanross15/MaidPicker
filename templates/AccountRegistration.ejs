@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta charset="UTF-8">
-      <title>Bestätige deinen Account | TutorSpace</title>
+      <title>Registration MaidPicker</title>
       <!-- Tell the browser to be responsive to screen width -->
       <style>
           button:hover{background-color: #741a55;}
@@ -24,8 +24,8 @@
                   <td>
                      <p style='font-size:15px;font-weight:bold;'><i>Hallo <%= userName %></i>,
                      </p>
-                     <p style='margin:0;color:#430b39; font-size:15px;'>Willkommen in der TutorSpace-Community!</p>
-                     <p style='font-size:15px;'>Bitte bestätige deinen Account, indem du auf den folgenden Button klickst </p>
+                     <p style='margin:0;color:#430b39; font-size:15px;'>Welcome to MaidPicker Community</p>
+                     <p style='font-size:15px;'>Your Account has been sucessfully registered with maidpicker</p>
                      <p>  Your One time Password is <%= otp %>  
                     </p>
                   </td>
@@ -34,11 +34,7 @@
          </table>
          <table style="width:100%; padding:0;">
             <tbody>
-               <tr>
-                  <td>
-                     <p style='font-size:15px;margin-top:0;'>Wenn du Fragen oder Anregungen hast, melde dich einfach bei uns mit einer Email an <a href="mailto:support@tutorspace.de" style="color:#430b39;"> <b>support@tutorspace.de</b></a> oder einer Whatsapp Nachricht an 
-                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAABDBJREFUOI2t1G1olXUYx/Hv/77vc9/n0XM2nducw1qlYZhJugQVymXSg9qDFkmImUEUVsREhSDqRQQiIoIKOQ1WSFpQIGkYhWZCWdRyE020LZ16trPlds597qf//f/3Qpm98F393l7X9Xl3/eB/jgBonttIKmdzV9uUJ1paJy/JNKWbE2kzjdZa3+rAEEL6ynMvVft7f+k/9Me3fZ+7JY+LP169Pk/VJlnesWhb25MPvB6j8AmIUQgEIQE+HhqFjYNDCoHAQJDEwcLkh29+3bvvhUNrKsUqJsD9q6YvfqZ90fZRKozGFWKtqegKV1U/jk4zhanU6SYiJbmke3G1S0I7uNojMCLubmmZVRwYOt934vLvFsDsl+5ZLYlxpYclEgzpQQwMlhtrmWG0InWERpEwHK7pEl+qTs6qU0wSzQQyxLN8Zq6ctuLo5pMfWwBO3q6r4AGCYVVCYLApsRVDm+yXu7mse1FCk6eGh4wlvGa+wz69i+Pqa5qM23DxsTJmFsACEI5IBIQEKqSsy7xr70BrWBc+iyKmTjSQ1Cn+5Bw/xxtZYa7heesV+sM++uM+6q0GRNKwAAyAMJY6ImZAFZlrtDFB1LM+WM2DxuO8b3eQ0zW4yiOtx9FEC53RLs6p06y0XqWsygRERLHUY2CkYh0hqcQuc4wFdMUn6YlO8Yj5NI1iMlldYESNECpJrDQ5XcPB6AB1ooHJ3EGZMpGKuQlqiU8IyiQlMlyM+zCUzU/yewCKcZFheY1+2U+f7MVUNgNxkQCfAuOp4BIpeRMMlSREUlFVYi2xSZLUWfZ6Ozkju/kgs4N60cRC61GWJp7DjT2COMJAUFZlQh0T3gAtgEBFBErixj7dsotWax4ZXQCt2TC6jg3Z99iZ+2TsWzrdj5idnIeBSVfYRT5ZIFDev8A4wpMBaZ1jv/spj9U8xXRjJof9g9QZdbw90s5CZzFTrWkcD46hFLyZ2UhntYMrUZGszOOr8Cbo69BIxAGj0mWC1cCgGkBrwQJ7IT1hD5flANuDbVSVy/zkAg5PPMaZ6DRbR7bQZDbjKp9AR2IMrPq+NLG5EPTxRq6dRnMSL2bWkjXGEemQnqibUIc0mo3ca9/HoepXrB9+i7yRRyqNR4jr+XIMHCm5Q2bKIa/GMxpX2DO6hyPVI1yUf7E0s4w5TisZMY7zYS+b/97CCf849WYDtk5Rjqokkw7lkao71kYT1tQtu73jzi+sAZOhSomiGqBg5EkZaUpxiVCHiOurFIwCtWYtINBKIRyBPcmht/3Cy8UtV3abAH6vf1ZNFFPUfHNWnISsmcM0bHRCkLIzZO1xpO0cWTuHmUgQmpLQkchajazVlA6UPhvcfGWTqqgbfTgzhS4I7Lb0KmuG87DIionCESlAc6uGFQgdaV+P6EHZHRyNvvM+FMOa6m/VW9f4f8k/7BIZhNpwFEYAAAAASUVORK5CYII=">015901365995</td>
-               </tr>
+               <tr> </tr>
             </tbody>
          </table>
          <br/>
@@ -47,9 +43,7 @@
                <tr>
                   <td  style="width:100%;">
                      <p  style="margin:0; font-size:15px;">Beste Grüße,</p>
-					 <p  style="margin:0; font-size:15px;">Patrick Nadler</p>
-                     <p  style="margin:0; font-size:15px;">Gründer von TutorSpace</p>
-                    <p  style="margin:0; font-size:15px;"><a href="http://www.tutorspace.de" style="color:#430b39;text-decoration:none;"> www.tutorspace.de</a></p>
+					 <p  style="margin:0; font-size:15px;">MaidPicker</p>
                   </td>
                </tr>
             </tbody>

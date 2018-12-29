@@ -20,7 +20,7 @@ export default class Login {
             .then(
                 loggedin => {
                     if (!loggedin) throw ResponseMessages.BAD_TOKEN_REQUEST;
-                    if (loggedin.refreshToken == "" || !loggedin.refreshToken) throw ResponseMessages.BAD_REFRESH_TOKEN_REQUEST;
+               
                     return authenticationDao.logout(json.accessToken);
                 }).then(() => {     
                     ResponseController.sendResponse(req, res, {}, ErrorCodes.OK, ResponseMessages.LOGOUT_SUCCESSFULLY);
@@ -94,8 +94,8 @@ export default class Login {
                         throw ResponseMessages.FACEBOOK_SITE_ERROR;
                     }
                     else {
-                        res.send(facebookRes);
-                      //Login.CheckOnFBData(req, res, fbDetails, json);
+                      //  res.send(facebookRes);
+                      Login.CheckOnFBData(req, res, fbDetails, json);
                     }
                 }).catch((err: any) => {
                     ResponseController.catchError(req, res, err);

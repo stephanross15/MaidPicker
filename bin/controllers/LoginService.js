@@ -17,8 +17,6 @@ var Login = /** @class */ (function () {
             .then(function (loggedin) {
             if (!loggedin)
                 throw Contants_1.ResponseMessages.BAD_TOKEN_REQUEST;
-            if (loggedin.refreshToken == "" || !loggedin.refreshToken)
-                throw Contants_1.ResponseMessages.BAD_REFRESH_TOKEN_REQUEST;
             return AuthenticationCore_1.authenticationDao.logout(json.accessToken);
         }).then(function () {
             ResponseService_1.default.sendResponse(req, res, {}, Contants_2.ErrorCodes.OK, Contants_1.ResponseMessages.LOGOUT_SUCCESSFULLY);
@@ -82,8 +80,8 @@ var Login = /** @class */ (function () {
                     throw Contants_1.ResponseMessages.FACEBOOK_SITE_ERROR;
                 }
                 else {
-                    res.send(facebookRes);
-                    //Login.CheckOnFBData(req, res, fbDetails, json);
+                    //  res.send(facebookRes);
+                    Login.CheckOnFBData(req, res, fbDetails, json);
                 }
             }).catch(function (err) {
                 ResponseService_1.default.catchError(req, res, err);
